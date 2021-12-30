@@ -49,3 +49,10 @@ All inputs should be absolute path
 cd hlaloh-analysis 
 python3 ${PWD}/hlaloh.py -tumor ${PWD}/test_example/test-tumor.bam -normal ${PWD}/test_example/test-normal.bam -hla ${PWD}/test_example/test-hlatype -vcf ${PWD}/test_example/test.vcf -out ${PWD}/test_out
 ```
+## Result
+> hlaloh.json
+```
+[{'genesymbol': 'HLA-A', 'LOH': '阴性'}, {'genesymbol': 'HLA-B', 'LOH': '阳性'}, {'genesymbol': 'HLA-C', 'LOH': '阴性'}]
+```
+> tmp dir
+>> test.10.DNA.HLAlossPrediction_CI.xls
