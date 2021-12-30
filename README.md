@@ -21,6 +21,12 @@ cd hlaloh-analysis
 sed "s#MAIN#${PWD}#g" ${PWD}/lohhla/LOHHLAscript.R > ${PWD}/lohhla/LOHHLAscript_setpath.R  
 chmod a+x ${PWD}/lohhla/LOHHLAscript_setpath.R  
 ```
+### unzip reference
+```
+cd hlaloh-analysis  
+cd data  
+gizp -d *gz
+```
 ## Method
 ```
 python3 hlaloh.py -h
