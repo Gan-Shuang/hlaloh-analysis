@@ -49,7 +49,7 @@ optional arguments:
   -hla HLATYPE_FILE, -hlaType HLATYPE_FILE
                         HLA type information file
 ```
-note：purity information was counted from VAF from VCF file（or loaded by modificate py script）  
+note：purity information was counted from VAF from VCF file（or loaded by edit py script）  
 ## Test
 All inputs should be absolute path  
 ```
