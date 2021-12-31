@@ -1,7 +1,7 @@
 # hlaloh-analysis
 HLA-LOH detect method for most NGS data.  
 ## Introduction
-hlaloh-analysis based on https://github.com/mskcc/lohhla. suitable for most NGS data covered HLA area.
+hlaloh-analysis based on https://github.com/mskcc/lohhla. suitable for most NGS data and easy to start.
 ## Install
 ### build singularity evironment 
 Reqired R tools and samtools,bedtools in this env 
