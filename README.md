@@ -1,11 +1,16 @@
 # hlaloh-analysis
+HLA-LOH detect method for most NGS data.  
+## Introduction
+hlaloh-analysis based on https://github.com/mskcc/lohhla. suitable for most NGS data covered HLA area.
 ## Install
-### build singularity evironment  
+### build singularity evironment 
+Reqired R tools and samtools,bedtools in this env 
 ```
 cd hlaloh-analysis  
 singularity build lohhla.sif docker://ganshuang0925/samtools_bedtools  
 ```
 ### install jellyfish
+package was offered
 ```  
 cd hlaloh-analysis  
 tar -zxvf jellyfish-1.1.10.tar.gz  
@@ -16,6 +21,7 @@ make install
 ```
   
 ### change work path
+change R script tools path
 ```
 cd hlaloh-analysis  
 sed "s#MAIN#${PWD}#g" ${PWD}/lohhla/LOHHLAscript.R > ${PWD}/lohhla/LOHHLAscript_setpath.R  
@@ -43,6 +49,7 @@ optional arguments:
   -hla HLATYPE_FILE, -hlaType HLATYPE_FILE
                         HLA type information file
 ```
+note：purity information was counted from VAF from VCF file（or loaded by modificate py script）  
 ## Test
 All inputs should be absolute path  
 ```
